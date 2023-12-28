@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DELTA_TZ</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <section class="container">
+        <div class="box-item">
+          <table>
+            <tr>
+              <th>Показатель</th>
+              <th class="blue">Текущий&nbsp;день</th>
+              <th>Вчера</th>
+              <th>Этот&nbsp;день&nbsp;недели</th>
+            </tr>
+          </table>
+          <div class="accordion">
+            <div class="accordion-item-js2">
+              <div class="accordion-item_trigger-js2">
+                <table>
+                  <tr>
+                    <td>Выручка,&nbsp;руб</td>
+                    <td class="blue">500&nbsp;521</td>
+                    <td class="green">
+                      <span>480&nbsp;521</span><span>4%</span>
+                    </td>
+                    <td class="red">4&nbsp;805&nbsp;121</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="accordion-item_content-js2">
+                <figure class="highcharts-figure">
+                  <div id="containerRevenue"></div>
+                </figure>
+              </div>
+            </div>
+            <div class="accordion-item-js2">
+              <div class="accordion-item_trigger-js2">
+                <table>
+                  <tr>
+                    <td>Наличные</td>
+                    <td class="blue">300&nbsp;000</td>
+                    <td><span>300&nbsp;000</span><span>0%</span></td>
+                    <td>300&nbsp;000</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="accordion-item_content-js2">
+                <figure class="highcharts-figure">
+                  <div id="containerCash"></div>
+                </figure>
+              </div>
+            </div>
+            <div class="accordion-item-js2">
+              <div class="accordion-item_trigger-js2">
+                <table>
+                  <tr>
+                    <td>Безналичный&nbsp;расчет</td>
+                    <td class="blue">100&nbsp;000</td>
+                    <td><span>100&nbsp;000</span><span>0%</span></td>
+                    <td>100&nbsp;000</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="accordion-item_content-js2">
+                <figure class="highcharts-figure">
+                  <div id="containerCashlessPayment"></div>
+                </figure>
+              </div>
+            </div>
+            <div class="accordion-item-js2">
+              <div class="accordion-item_trigger-js2">
+                <table>
+                  <tr>
+                    <td>Кредитные&nbsp;карты</td>
+                    <td class="blue">100&nbsp;521</td>
+                    <td><span>100&nbsp;521</span><span>0%</span></td>
+                    <td>100&nbsp;521</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="accordion-item_content-js2">
+                <figure class="highcharts-figure">
+                  <div id="containerCreditCards"></div>
+                </figure>
+              </div>
+            </div>
+            <div class="accordion-item-js2">
+              <div class="accordion-item_trigger-js2">
+                <table>
+                  <tr>
+                    <td>Средний&nbsp;чек,&nbsp;руб</td>
+                    <td class="blue">1&nbsp;300</td>
+                    <td class="green"><span>900</span><span>44%</span></td>
+                    <td class="green">900</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="accordion-item_content-js2">
+                <figure class="highcharts-figure">
+                  <div id="containerAverageCheck"></div>
+                </figure>
+              </div>
+            </div>
+            <div class="accordion-item-js2">
+              <div class="accordion-item_trigger-js2">
+                <table>
+                  <tr>
+                    <td>Средний&nbsp;гость,&nbsp;руб</td>
+                    <td class="blue">1&nbsp;200</td>
+                    <td class="green"><span>800</span><span>50%</span></td>
+                    <td class="green">800</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="accordion-item_content-js2">
+                <figure class="highcharts-figure">
+                  <div id="containerAverageGuest"></div>
+                </figure>
+              </div>
+            </div>
+            <div class="accordion-item-js2">
+              <div class="accordion-item_trigger-js2">
+                <table>
+                  <tr>
+                    <td>
+                      Удаления&nbsp;из&nbsp;чека&nbsp;(после&nbsp;оплаты),&nbsp;руб
+                    </td>
+                    <td class="blue">1&nbsp;000</td>
+                    <td class="red"><span>1&nbsp;100</span><span>-9%</span></td>
+                    <td class="green">900</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="accordion-item_content-js2">
+                <figure class="highcharts-figure">
+                  <div id="containerDeletingReceiptAfterPayment"></div>
+                </figure>
+              </div>
+            </div>
+            <div class="accordion-item-js2">
+              <div class="accordion-item_trigger-js2">
+                <table>
+                  <tr>
+                    <td>
+                      Удаления&nbsp;из&nbsp;чека&nbsp;(до&nbsp;оплаты),&nbsp;руб
+                    </td>
+                    <td class="blue">1&nbsp;300</td>
+                    <td><span>1&nbsp;300</span><span>0%</span></td>
+                    <td class="green">900</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="accordion-item_content-js2">
+                <figure class="highcharts-figure">
+                  <div id="containerDeletingReceiptBeforePayment"></div>
+                </figure>
+              </div>
+            </div>
+            <div class="accordion-item-js2">
+              <div class="accordion-item_trigger-js2">
+                <table>
+                  <tr>
+                    <td>Количество&nbsp;чеков</td>
+                    <td class="blue">34</td>
+                    <td class="red"><span>36</span><span>-6%</span></td>
+                    <td>34</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="accordion-item_content-js2">
+                <figure class="highcharts-figure">
+                  <div id="containerQuantityChecks"></div>
+                </figure>
+              </div>
+            </div>
+            <div class="accordion-item-js2">
+              <div class="accordion-item_trigger-js2">
+                <table>
+                  <tr>
+                    <td>Количество&nbsp;гостей</td>
+                    <td class="blue">34</td>
+                    <td class="red"><span>36</span><span>-6%</span></td>
+                    <td class="green">32</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="accordion-item_content-js2">
+                <figure class="highcharts-figure">
+                  <div id="containerQuantityQuests"></div>
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/export-data.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
